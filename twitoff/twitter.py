@@ -28,7 +28,7 @@ def add_or_update_user(username):
 
         # grabs tweets from twitter_user
         tweets = twitter_user.timeline(
-            count=300, exclude_replies=True, include_rts=False,
+            count=500, exclude_replies=True, include_rts=False,
             tweet_mode="extended", since_id=db_user.newest_tweet_id
         )
 
